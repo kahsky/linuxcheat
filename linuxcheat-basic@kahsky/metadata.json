@@ -1,0 +1,9 @@
+{
+    "uuid": "linuxcheat-basic@kahsky",
+    "name": "Linux Cheat Sheet (Basic)",
+    "description": "Cheat sheet des commandes Linux de base — grande popup tout-en-un.",
+    "icon": "utilities-terminal",
+    "cinnamon-version": ["4.6","4.8","5.0","5.2","5.4","5.6","5.8","6.0"],
+    "author": "kahsky",
+    "last-edited": 1771455566
+}
