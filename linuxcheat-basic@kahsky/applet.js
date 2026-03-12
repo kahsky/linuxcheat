@@ -176,6 +176,11 @@ LinuxCheatBasicApplet.prototype = {
     _buildMenu: function() {
         this.menu.removeAll();
 
+        if (this._outerBox) {
+            this._outerBox.destroy();
+            this._outerBox = null;
+        }
+
         let headerItem = new PopupMenu.PopupMenuItem("", { reactive: false });
         let subtitle = this.language === "fr" ? "clic sur une commande pour copier" : "click a command to copy";
         headerItem.label.clutter_text.set_markup(
@@ -205,6 +210,7 @@ LinuxCheatBasicApplet.prototype = {
             outerBox.add_child(colBox);
         }
 
+        this._outerBox = outerBox;
         this.menu.box.add_child(outerBox);
     },
 
